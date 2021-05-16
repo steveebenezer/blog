@@ -1,0 +1,7 @@
+url: "https://theunprofessionalcook.net"
+baseurl: ""
+title: "theunprofessionalcook"
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag

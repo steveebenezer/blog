@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<article>
+  <h2>{{ page.title }}</h1>
+  {{ content | markdownify }}
+  <p>
+    <small>
+      Posted on <time>{{ page.date | date_to_string: "ordinal", "US" }}</time><br>
+      Tags: {% for tag in page.tags %} #{{ tag }} {% endfor %}
+    </small>
+  </p>
+  <!-- {{ unless page.previous.nil? }}
+    <a href="{{ page.previous }}">previous</a>
+  {{ endunless }}
+  {{ unless page.next.nil? }}
+    <a href="{{ page.next }}">next</a>
+  {{ endunless }} -->
+</article>
